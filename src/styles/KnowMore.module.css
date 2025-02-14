@@ -1,0 +1,74 @@
+.knowMoreContainer {
+  height: 90dvh;
+  background-color: #f5f4f4;
+  border-radius: 10px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.knowMoreheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.knowMoreBody {
+  height: 80%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+}
+
+.navLinksInner {
+  width: 35dvw;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.cardsDisplay {
+  width: 48dvw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 3rem;
+}
+
+.cardsPreview {
+  height: 40dvh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.rightBodyText {
+  text-align: center;
+}
+
+.CardContainer {
+  height: 30dvh;
+  width: 12dvw;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.CardContainer {
+  font-size: 0.8rem;
+}
+
+.CardContainer p {
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.CardContainer img {
+  height: 7rem;
+}

@@ -1,0 +1,191 @@
+.main {
+  height: auto;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: underline;
+  color: #fc8a06;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4dvh;
+  width: 90dvw;
+  height: auto;
+  min-width: 80dvw;
+  justify-self: center;
+}
+
+.similarRestaurants {
+  background-color: #fc8a06;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  color: white;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.leftArrow {
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.body {
+  padding: 20px;
+  display: flex;
+  gap: 50px;
+}
+
+.leftBody {
+  width: 60%;
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 12px;
+  display: grid;
+}
+
+.leftBody span {
+  font-size: 0.7rem;
+  color: grey;
+}
+
+.leftBody input {
+  width: 100%;
+  border-radius: 40px;
+  border: 1px solid grey;
+  height: 1.7rem;
+  padding: 5px;
+}
+
+.itemMain {
+  height: 4rem;
+  border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemName p {
+  font-size: 0.7rem;
+  color: grey;
+}
+
+.itemPrice p {
+  font-weight: 600;
+  color: green;
+}
+.itemMainLeft {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.imageDisplay {
+  height: 2.5rem;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.imageDisplay img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.rightBody {
+  display: grid;
+  width: 40%;
+  height: 45dvh;
+}
+
+.addressToggle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 40px;
+  padding: 20px;
+  align-items: center;
+  height: 3.5rem;
+}
+
+.deliveryText {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.deliveryText p span {
+  font-size: 0.8rem;
+  color: grey;
+  font-weight: lighter;
+}
+.deliveryText p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.loationIcon {
+  border: 1px solid black;
+  padding: 10px 12px;
+  border-radius: 90px;
+  color: #fc8a06;
+}
+
+.rightArrowIcon {
+  color: #fc8a06;
+  cursor: pointer;
+}
+
+.paymentMthodBtn {
+  border: none;
+  height: 3rem;
+  background-color: #fc8a06;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.itemsPrice div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.itemsPrice p {
+  color: grey;
+}
+
+.itemsPrice {
+  display: grid;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+  padding-top: 15px;
+}
+
+.totalPrice {
+  display: flex;
+  justify-content: space-between;
+  color: grey;
+  font-size: 1.2rem;
+}
+
+.totalPrice span {
+  font-weight: 700;
+  color: black;
+}

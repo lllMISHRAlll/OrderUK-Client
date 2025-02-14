@@ -1,0 +1,346 @@
+.main {
+  height: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: underline;
+  color: #fc8a06;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4dvh;
+  width: 90dvw;
+  height: auto;
+  min-width: 80dvw;
+  justify-self: center;
+}
+
+.preHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f4f4;
+  height: 3rem;
+  border: 0.2px solid #e0e0e0;
+  border-radius: 0 0 20px 20px;
+}
+
+.preHeaderWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1%;
+  width: 70%;
+  width: 85%;
+}
+
+.changeLocation {
+  color: #fc8a06;
+  border: none;
+  background-color: transparent;
+}
+
+/**    Header Navigation     **/
+
+.header {
+  padding: 10px 20px;
+  height: 15dvh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header img {
+  width: 200px;
+  height: 50px;
+}
+
+.loginSignUpBtn {
+  padding: 15px 15px;
+  border-radius: 50px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.loginSignUpBtn:hover {
+  background-color: #a95b03;
+  transition: 0.3s ease-in-out;
+}
+
+.userIcon {
+  margin-right: 15px;
+  color: #fc8a06;
+}
+
+/**     Hero Section      **/
+
+.heroContainer {
+  height: 80dvh;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.heroInput {
+  display: inline-block;
+  height: 3rem;
+  position: relative;
+  margin-top: 20px;
+}
+
+.heroInput input {
+  padding: 1.25rem;
+  min-width: 500px;
+  border: 1px solid #e0e0e0;
+  border-radius: 50px;
+}
+
+.heroInput p {
+  margin-left: 20px;
+  font-size: 0.7rem;
+}
+
+.heroInput button {
+  padding: 3% 5%;
+  border-radius: 50px;
+  border: none;
+  background-color: #fc8a06;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 35px;
+  font-size: 1.25rem;
+}
+
+.heroInput button :hover {
+  background-color: #a95b03;
+  transition: 0.3s ease-in-out;
+}
+
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2%;
+}
+
+.heroLeft h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.heroLeft p:first-child {
+  font-size: 1.4rem;
+}
+.heroLeft h2 span {
+  color: #fc8a06;
+}
+
+.heroRight {
+  position: relative;
+}
+
+/**  Images  **/
+.img1 {
+  height: 30rem;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+}
+.img2 {
+  height: 25rem;
+  position: absolute;
+  border-radius: 10px;
+  bottom: 0;
+  right: 220px;
+}
+
+.shape {
+  height: 510px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.orderStatus {
+  display: grid;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 80px;
+}
+
+/**    DownloadApp Section     **/
+
+.downloadAppContainer {
+  position: relative;
+  height: 80dvh;
+  background-color: antiquewhite;
+  background: linear-gradient(180deg, #eeeeee 0%, #e0e1dc 100%);
+  border-radius: 10px;
+  margin-top: 80px;
+}
+
+.downloadAppContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textContent {
+  margin-left: 40dvw;
+}
+
+.friendsLaughing1 {
+  height: 38rem;
+  position: absolute;
+  bottom: 0;
+  right: 640px;
+  opacity: 30%;
+}
+.friendsLaughing2 {
+  height: 36rem;
+  position: absolute;
+  bottom: 0;
+  right: 635px;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.orderingWrapper {
+  display: flex;
+}
+
+.orderingWrapper img {
+  height: 4rem;
+}
+
+.orderingWrapper h1 {
+  font-size: 3.5rem;
+}
+
+.persoInstant {
+  background-color: rgba(3, 8, 31, 1);
+  padding: 5px 65px 5px 190px;
+  border-radius: 50px;
+}
+
+.persoInstant p {
+  font-size: 2.8rem;
+  color: white;
+}
+
+.downloadText {
+  font-size: 1.4rem;
+}
+
+.AppStoreWrapper {
+  display: flex;
+  gap: 2px;
+}
+
+.footerStore {
+  border-radius: 5px;
+  border: 1px grey solid;
+}
+
+/**        PARTNER WITH US         **/
+
+.PartnerWithUsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.partnerWithUsTile {
+  height: 23rem;
+  width: 43rem;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  display: grid;
+}
+
+.countDisplay {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fc8a06;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 20px;
+}
+
+.countWrapper {
+  text-align: center;
+  padding: 20px;
+}
+
+.bar {
+  border: 0.1px solid white;
+}
+
+.countWrapper h1 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.countWrapper p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/**            CART TOGGLE BUTTON CSS            **/
+.cartToggle {
+  width: 15rem;
+  background-color: rgba(2, 134, 67, 1);
+  border-radius: 0 0 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.cartIcon {
+  display: flex;
+  gap: 10px;
+  color: white;
+  font-weight: 600;
+}
+
+.basketIcon {
+  font-size: 1.3rem;
+}
+
+.verticalBarWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 5rem;
+}
+
+.verticalBar {
+  border: 1px solid #f5f4f4;
+  height: 3rem;
+}
+
+.downArrowCart {
+  color: white;
+  font-size: 1.3rem;
+}

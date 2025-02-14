@@ -1,0 +1,116 @@
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-left: 150px;
+  padding: 0;
+}
+.KnowMoreNavList {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+}
+.productPageNavList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 65px;
+  padding: 20px;
+}
+.KnowMoreInnerNavList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0;
+}
+
+.navItem {
+  margin-right: 20px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+.KnowMoreNavLink {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+.KnowMoreInnerNavLink {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+.productPageNavLink {
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.navLink:hover,
+.KnowMoreNavLink:hover,
+.KnowMoreInnerNavLink:hover {
+  color: #fc8a06;
+  transition: color 0.2s ease;
+}
+
+.productPageNavLink.activeLink {
+  background-color: black;
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 40px;
+  transition: background-color 0.4s ease;
+}
+
+.navLink.activeLink {
+  background-color: #fc8a06;
+  color: white;
+  border-radius: 50px;
+  font-weight: 500;
+  border: 1px solid #fc8a06;
+}
+.KnowMoreNavLink.activeLink {
+  color: black;
+  border-radius: 50px;
+  font-weight: 600;
+  border: 1px solid #fc8a06;
+  padding: 10px 15px;
+}
+.KnowMoreInnerNavLink.activeLink {
+  color: black;
+  background-color: rgba(252, 138, 6, 1);
+  border-radius: 50px;
+  padding: 15px 25px;
+  display: inline-block;
+}
+
+.navLink:focus {
+  outline: none;
+}
+
+.productPageNav {
+  background-color: #fc8a06;
+  margin-left: -100px;
+  margin-right: -100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.productPageNavItem {
+  font-weight: 600;
+}

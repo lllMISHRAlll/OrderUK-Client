@@ -1,0 +1,92 @@
+.main {
+  height: 55dvh;
+  background-color: rgba(217, 217, 217, 1);
+  margin-left: -100px;
+  margin-right: -100px;
+  position: relative;
+}
+
+.ratingDisplay {
+  position: absolute;
+  background-color: white;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  left: 45%;
+  top: 85%;
+}
+
+.reviewHeader {
+  height: 10dvh;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+}
+
+.buttons {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.btnIcons {
+  background-color: rgba(252, 138, 6, 1);
+  padding: 15px 19px;
+  border-radius: 90px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.reviewBody {
+  height: 40dvh;
+  padding: 40px 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviewsContainer {
+  height: 12rem;
+  width: 24rem;
+  background-color: white;
+  border-radius: 10px;
+  display: grid;
+  padding: 15px;
+}
+
+.reviewUserInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.reviewUserImg {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.reviewUserImg img {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 90px;
+}
+
+.reviewUserImg p span {
+  font-size: 0.8rem;
+  color: rgba(252, 138, 6, 1);
+}
+
+.reviewRatingsDates {
+  display: inline-block;
+  text-align: right;
+}
+.reviewRatingsDates p {
+  font-size: 0.8rem;
+}
+
+.verticalbar {
+  border: 1px solid rgba(252, 138, 6, 1);
+  height: 2.7rem;
+}
+
+.reviewText {
+  font-size: 0.8rem;
+}

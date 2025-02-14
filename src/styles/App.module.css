@@ -1,0 +1,187 @@
+* {
+  font-family: poppins;
+}
+.main {
+  display: grid;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.signUpLogIn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 2% 10% 0 10%;
+}
+
+.signUpLogIn input {
+  width: 80%;
+  padding: 2%;
+  border-radius: 20px;
+  border: 0.5px solid #e8e8e8;
+}
+
+.signUpLogIn input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.signUpLogIn button {
+  width: 80%;
+  padding: 2%;
+  border-radius: 20px;
+  border: none;
+  background-color: #fc8a06;
+  color: white;
+  cursor: pointer;
+  margin: 20px 0 20px 0;
+}
+
+.signUpLogIn p a {
+  color: #fc8a06;
+}
+
+.signInAnchor {
+  font-size: 0.8rem;
+  padding-left: 10%;
+}
+
+.OrderUkImg {
+  width: 10rem;
+  align-self: center;
+}
+
+.homeImgContainer {
+  padding: 2%;
+  width: 35%;
+  height: 95dvh;
+}
+
+.homeImgContainer img {
+  object-fit: cover;
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.footer {
+  display: grid;
+  margin-top: 50px;
+}
+
+.footerUpper {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1%;
+}
+
+.AppStoreContainer {
+  display: grid;
+  padding: 2%;
+  gap: 25px;
+}
+
+.AppStoreWrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.AppStoreWrapper img {
+  border-radius: 5px;
+  height: 2.5rem;
+}
+
+.AppStoreContainer p {
+  font-size: 0.7rem;
+}
+
+.subscribeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.subscribeInput {
+  display: inline-block;
+  height: 3rem;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.subscribeInput input {
+  padding: 4.7%;
+  min-width: 300px;
+  border: 1px solid #e0e0e0;
+  border-radius: 50px;
+}
+
+.subscribeInput p {
+  margin-left: 20px;
+  font-size: 0.7rem;
+}
+
+.subscribeInput button {
+  padding: 5% 10% 5% 10%;
+  border-radius: 50px;
+  border: none;
+  background-color: #fc8a06;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.faIcons {
+  height: 2rem;
+}
+
+.footerOrderUk {
+  height: 3rem;
+}
+
+.footerLower {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 1%;
+  font-size: 0.7rem;
+  gap: 50px;
+}
+
+.copyRights {
+  margin: 0 35% 0 5%;
+}
+
+.allLinks {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.allLinks a {
+  font-size: 0.7rem;
+  text-decoration: underline;
+}
+
+.legalPages {
+  display: grid;
+}
+.importantLinks {
+  display: grid;
+}
+
+.bgGrey {
+  background-color: #f5f4f4;
+  border: 0.2px solid #e0e0e0;
+}

@@ -1,0 +1,44 @@
+.popularCategories {
+  display: grid;
+  gap: 10px;
+}
+
+.CardsContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cardsWrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 0.5px solid #e8e8e8;
+  max-width: 10rem;
+  cursor: pointer;
+}
+
+.cardImg {
+  height: 10rem;
+  object-fit: cover;
+}
+
+.cardInfo {
+  background-color: #e8e8e8;
+  padding: 5px;
+  border: 1px solid #e8e8e8;
+}
+
+.cardInfo p {
+  font-size: 0.8rem;
+  color: rgba(252, 138, 6, 1);
+}
+
+.popularRestaurants {
+  background-color: rgba(252, 138, 6, 1);
+  padding: 10px 0px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 0 0 5px 5px;
+}

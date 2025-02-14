@@ -1,0 +1,100 @@
+/***          TEXT WRAP SECTION CSS      DOWN       **/
+
+.textWrapExclusivDeal {
+  padding: 1rem;
+  margin-top: 60px;
+}
+
+.textWrapExclusivDeal span {
+  color: #fc8a06;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.textWrapExclusivDeal p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+}
+.textWrapPartnerWithUs {
+  padding: 3rem;
+  margin-top: 4rem;
+}
+
+.textWrapPartnerWithUs span {
+  color: #fc8a06;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.textWrapPartnerWithUs p {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+/***          TEXT WRAP SECTION CSS      UP       **/
+
+.orangeBtn {
+  background-color: rgba(252, 138, 6, 1);
+  color: white;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 40px;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+.plusButton {
+  background-color: rgb(246, 246, 246);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 2rem;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 30px 0 0 0;
+}
+
+.earnMoreWrapper {
+  display: flex;
+  height: 2.7rem;
+}
+
+.earnMoreWrapper p {
+  color: black;
+  font-weight: 600;
+}
+
+.earnMoreWrapper div:first-child {
+  background-color: white;
+  padding: 10px;
+  margin-left: 40px;
+  justify-content: center;
+  border-radius: 0 0 10px 10px;
+}
+
+.productPageTile {
+  height: 10rem;
+  width: 16rem;
+  border-radius: 10px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.productPageTextWrap {
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.productPageTextWrap span {
+  color: #fc8a06;
+  font-size: 0.8rem;
+}
+.productPageTextWrap p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+}

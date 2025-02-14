@@ -1,0 +1,101 @@
+.main {
+  height: auto;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: underline;
+  color: #fc8a06;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4dvh;
+  width: 90dvw;
+  height: auto;
+  min-width: 80dvw;
+  justify-self: center;
+}
+
+.header {
+  height: 2rem;
+}
+.body {
+  height: 90%;
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+}
+.addressmain {
+  display: inline-block;
+  height: 80dvh;
+  padding: 20px;
+}
+
+.cardMain {
+  height: 11rem;
+  width: 15rem;
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.addresstext {
+  height: 90%;
+}
+.addresstext p {
+  word-wrap: break-word;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  line-break: auto;
+  max-lines: 2;
+}
+
+.editPanel {
+  display: flex;
+  gap: 10px;
+  font-size: 0.7rem;
+  color: #fc8a06;
+}
+
+.editPanel span {
+  cursor: pointer;
+}
+
+.verticalBar {
+  border: 1px solid grey;
+}
+
+.addAddress {
+  height: 11rem;
+  width: 15rem;
+  border: 1px dashed grey;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.addAddress p {
+  font-weight: 500;
+}
+
+.addAddress button {
+  background-color: #fcefdf;
+  color: #fc8a06;
+  border: none;
+  padding: 0 14px;
+  font-weight: 200;
+  font-size: 2rem;
+  border-radius: 90px;
+  cursor: pointer;
+}

@@ -1,0 +1,111 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 70dvw;
+  height: 60dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+  gap: 15px;
+}
+
+.modal h2 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.headerDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.formRow input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.fullAddressDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.fullAddressDiv textarea {
+  width: 100%;
+  height: 30dvh;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.buttons button:first-child {
+  background-color: #fc8a06;
+  color: white;
+}
+
+.buttons button:last-child {
+  background-color: #ccc;
+  color: #333;
+}
+
+/**     CARD MODAL          **/
+
+.cardForm {
+  display: grid;
+}
+
+.cardForm div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cardForm div input {
+  height: 2.5rem;
+  width: 80%;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttonGroup button {
+  font-size: 1.5rem;
+}

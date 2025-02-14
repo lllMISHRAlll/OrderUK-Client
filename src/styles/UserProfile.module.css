@@ -1,0 +1,160 @@
+.main {
+  height: auto;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: underline;
+  color: #fc8a06;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4dvh;
+  width: 90dvw;
+  height: auto;
+  min-width: 80dvw;
+  justify-self: center;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.head img {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+.head div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.head button {
+  border: none;
+  background-color: #fc8a06;
+  padding: 5px 20px;
+  font-weight: 600;
+  color: white;
+  border-radius: 10px;
+}
+
+.body {
+  padding: 30px;
+}
+
+.body form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.body label {
+  font-weight: 500;
+  color: grey;
+}
+
+.body input,
+select {
+  width: 600px;
+  height: 2.5rem;
+  border: none;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 10px;
+}
+.paymentCards {
+  padding: 20px;
+  display: flex;
+  gap: 40px;
+}
+.cardWrapper {
+  display: flex;
+  width: 20rem;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 15px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.cardWrapper h5 {
+  margin: 0px 30px;
+  font-weight: 500;
+}
+.cardWrapper h5 span {
+  font-weight: 300;
+  color: grey;
+}
+
+.cardIcon {
+  color: #fc8a06;
+  background-color: #fff1e0;
+  padding: 10px;
+  border-radius: 50px;
+  justify-self: flex-start;
+}
+
+.addcard {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border: 1px solid grey;
+  width: 17rem;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 20px;
+}
+.plus {
+  background-color: #fff1e0;
+  padding: 10px;
+  color: #fc8a06;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.editIcon {
+  cursor: pointer;
+}
+
+.categoryInput button {
+  font-size: 1.5rem;
+  background-color: #fc8a06;
+  border: none;
+  color: #f9f9f9;
+  padding: 0px 10px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.submitBtn {
+  margin: 20px;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  padding: 20px;
+  background-color: #fc8a06;
+  border: none;
+  color: #f9f9f9;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  background-color: #d47305;
+}

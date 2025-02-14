@@ -1,0 +1,68 @@
+.main {
+  display: grid;
+  gap: 10px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+.dishesMain {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.dishContainer {
+  display: flex;
+  margin: 10px;
+}
+
+.dishWrapper {
+  display: flex;
+  overflow: hidden;
+  padding: 10px;
+  gap: 40px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.dishText {
+  padding: 5px;
+  display: grid;
+  gap: 10px;
+}
+
+.dishText h3 {
+  font-size: 1rem;
+}
+.dishText p {
+  font-size: 0.8rem;
+}
+.dishText span {
+  font-weight: 600;
+}
+
+.imageAndBtn {
+  width: 50%;
+  position: relative;
+}
+
+.imageAndBtn img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.imageAndBtn button {
+  background-color: rgb(246, 246, 246);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 1.5rem;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 30px 0 0 0;
+}

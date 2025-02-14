@@ -1,0 +1,59 @@
+.DiscountcardsWrapper {
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+}
+
+.DiscountcardsHead {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.DiscountcardsBody {
+  display: flex;
+  justify-content: space-between;
+}
+
+.discountCardTile {
+  height: 13rem;
+  width: 23rem;
+  overflow: hidden;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  display: grid;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.discountNumber {
+  display: flex;
+  justify-content: end;
+}
+
+.discountNumber p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffff;
+  width: 3.2rem;
+}
+
+.discountNumber div:first-child {
+  background-color: #000;
+  margin-right: 20px;
+  padding: 4% 2%;
+  border-radius: 0 0 10px 10px;
+}
+
+.DiscountcardsBodyProductpage {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0px 20px;
+  margin-bottom: 40px;
+  /* background-color: red; */
+}

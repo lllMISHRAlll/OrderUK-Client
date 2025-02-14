@@ -1,0 +1,194 @@
+.bodyWrapWithCart {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.container {
+  width: 30dvw;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  gap: 30px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.head {
+  display: flex;
+  background-color: rgba(2, 134, 67, 1);
+  height: 3.5rem;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/**        ITEM STYLLING          **/
+
+.shareLink {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(252, 138, 6, 1);
+  color: white;
+  border-radius: 10px;
+}
+
+.shareLink p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.shareLink button {
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 40px;
+  color: rgba(252, 138, 6, 1);
+}
+
+.shareIcon {
+  font-size: 3rem;
+}
+
+.itemContainer {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: white;
+}
+
+.itemMain {
+  min-height: 4rem;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.priceAndItemInfo {
+  display: grid;
+}
+
+.itemQuantity {
+  background-color: rgba(252, 138, 6, 1);
+  padding: 5px 10px;
+  border-radius: 40px;
+  font-weight: 800;
+  font-size: 1.2em;
+  color: white;
+  cursor: pointer;
+}
+
+.priceAndItemInfo p {
+  color: rgba(2, 134, 67, 1);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.priceAndItemInfo span {
+  font-size: 0.7rem;
+}
+.deleteItemBtn {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.totalPrice {
+  padding: 10px 20px;
+  display: grid;
+  gap: 15px;
+}
+
+.totalPrice p {
+  font-weight: bolder;
+}
+
+.totalPrice div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.totalPriceBtn {
+  margin: 10px 20px;
+  height: 3rem;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(252, 138, 6, 0.8);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.totalPriceBtn span {
+  font-size: 1.3rem;
+}
+
+.freeItemAndapplyCouponCode {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  margin: 10px 30px;
+  font-size: 0.8rem;
+  border: 1px solid grey;
+  padding: 10px 15px;
+  border-radius: 50px;
+  align-items: center;
+}
+
+.freeItemAndapplyCouponCode button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.3rem;
+}
+
+.deliveryTime {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.verticalBar {
+  height: 6rem;
+  border: 1px solid rgb(226, 226, 226);
+}
+
+.deliveryTime {
+  margin: 10px 20px;
+}
+
+.deliveryTimeDisplay {
+  text-align: center;
+  background-color: rgba(238, 238, 238, 1);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.collectionTimeDisplay {
+  text-align: center;
+  opacity: 40%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.checkOutBtn {
+  margin: 10px 20px;
+  height: 3rem;
+  border: none;
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
