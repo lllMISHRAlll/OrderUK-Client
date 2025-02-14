@@ -15,16 +15,16 @@ export default function Footer() {
         <div className={style.AppStoreContainer}>
           <img
             className={style.footerOrderUk}
-            src="/public/assets/Images/FooterOrderUk.png"
+            src="/assets/Images/FooterOrderUk.png"
           />
           <div className={style.AppStoreWrapper}>
             <img
               className={style.footerGplay}
-              src="/public/assets/Images/app-store-badge.png"
+              src="/assets/Images/app-store-badge.png"
             />
             <img
               className={style.footerAppStore}
-              src="/public/assets/Images/GogglePlay Badge.png"
+              src="/assets/Images/GogglePlay Badge.png"
             />
           </div>
           <p>

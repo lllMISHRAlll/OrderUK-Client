@@ -11,8 +11,7 @@ export default function Reviews({ review }) {
         <div className={reviewStyle.reviewUserImg}>
           <img
             src={
-              review.imgSrc ??
-              "/public/assets/Images/Review Assets/reviewUser1.png"
+              review.imgSrc ?? "/assets/Images/Review Assets/reviewUser1.png"
             }
             alt={review.name}
           />

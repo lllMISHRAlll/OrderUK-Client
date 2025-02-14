@@ -45,7 +45,7 @@ export default function LogIn() {
       <div className={style.signUpLogIn}>
         <img
           className={style.OrderUkImg}
-          src="/public/assets/Images/Order UK.png"
+          src="/assets/Images/Order UK.png"
           alt="Order UK"
         />
         <h1>Welcome Back &#128075;</h1>
@@ -86,7 +86,7 @@ export default function LogIn() {
         </form>
       </div>
       <div className={style.homeImgContainer}>
-        <img src="/public/assets/Images/HomeImage.png" alt="Home" />
+        <img src="/assets/Images/HomeImage.png" alt="Home" />
       </div>
     </div>
   );

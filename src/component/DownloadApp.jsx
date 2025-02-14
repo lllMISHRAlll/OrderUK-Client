@@ -20,11 +20,11 @@ export default function DownloadApp() {
         <div className={s.AppStoreWrapper}>
           <img
             className={s.footerStore}
-            src="/public/assets/Images/app-store-badge.png"
+            src="/assets/Images/app-store-badge.png"
           />
           <img
             className={s.footerStore}
-            src="/public/assets/Images/GogglePlay Badge.png"
+            src="/assets/Images/GogglePlay Badge.png"
           />
         </div>
       </div>

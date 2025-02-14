@@ -29,21 +29,21 @@ export default function ProductPage() {
       category: "Burgers",
       dishes: [
         {
-          image: "/public/assets/Images/Dishes/burgerDish.png",
+          image: "/assets/Images/Dishes/burgerDish.png",
           dishName: "Royal Cheese Burger with extra Fries",
           dishQuantity:
             "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium",
           price: "150",
         },
         {
-          image: "/public/assets/Images/Dishes/burgerDish.png",
+          image: "/assets/Images/Dishes/burgerDish.png",
           dishName: "Royal Cheese Burger with extra Fries",
           dishQuantity:
             "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium",
           price: "150",
         },
         {
-          image: "/public/assets/Images/Dishes/burgerDish.png",
+          image: "/assets/Images/Dishes/burgerDish.png",
           dishName: "Royal Cheese Burger with extra Fries",
           dishQuantity:
             "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium",
@@ -55,19 +55,19 @@ export default function ProductPage() {
       category: "Fries",
       dishes: [
         {
-          image: "/public/assets/Images/Dishes/Fries.png",
+          image: "/assets/Images/Dishes/Fries.png",
           dishName: "Classic Fries",
           dishQuantity: "3 medium packs of fries",
           price: "70",
         },
         {
-          image: "/public/assets/Images/Dishes/Fries.png",
+          image: "/assets/Images/Dishes/Fries.png",
           dishName: "Classic Fries",
           dishQuantity: "3 medium packs of fries",
           price: "70",
         },
         {
-          image: "/public/assets/Images/Dishes/Fries.png",
+          image: "/assets/Images/Dishes/Fries.png",
           dishName: "Classic Fries",
           dishQuantity: "3 medium packs of fries",
           price: "70",
@@ -78,19 +78,19 @@ export default function ProductPage() {
       category: "Cold Drinks",
       dishes: [
         {
-          image: "/public/assets/Images/Dishes/coldDrinks.png",
+          image: "/assets/Images/Dishes/coldDrinks.png",
           dishName: "Coca-Cola",
           dishQuantity: "500ml",
           price: "40",
         },
         {
-          image: "/public/assets/Images/Dishes/coldDrinks.png",
+          image: "/assets/Images/Dishes/coldDrinks.png",
           dishName: "Coca-Cola",
           dishQuantity: "500ml",
           price: "40",
         },
         {
-          image: "/public/assets/Images/Dishes/coldDrinks.png",
+          image: "/assets/Images/Dishes/coldDrinks.png",
           dishName: "Coca-Cola",
           dishQuantity: "500ml",
           price: "40",

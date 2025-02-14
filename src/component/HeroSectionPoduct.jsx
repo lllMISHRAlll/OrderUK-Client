@@ -18,7 +18,7 @@ export default function HeroSectionProduct() {
     <div
       className={style.heroMain}
       style={{
-        backgroundImage: `url("/public/assets/Images/FoodImages/burger.png")`,
+        backgroundImage: `url("/assets/Images/FoodImages/burger.png")`,
       }}
     >
       <div className={style.upper}>
@@ -38,7 +38,7 @@ export default function HeroSectionProduct() {
         </div>
         <div className={style.dishImgage}>
           <div className={style.dishImageWrapper}>
-            <img src="/public/assets/Images/FoodImages/burger.png" />
+            <img src="/assets/Images/FoodImages/burger.png" />
           </div>
           <div className={style.ratingDisplay}>
             <h1>3.4</h1>

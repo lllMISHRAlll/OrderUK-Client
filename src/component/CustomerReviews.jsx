@@ -9,7 +9,7 @@ export default function CustomerReviews() {
   const reviews = [
     {
       id: 1,
-      imgSrc: "/public/assets/Images/Review Assets/reviewUser1.png",
+      imgSrc: "/assets/Images/Review Assets/reviewUser1.png",
       name: "St Glx",
       location: "South London",
       rating: 5,

@@ -5,9 +5,9 @@ import NavigationBar from "./NavigationBar";
 import DiscountCardTile from "./DiscountCardTile";
 import textWraperStyle from "../styles/TilesModification.module.css";
 
-import firstOrderDiscount from "/public/assets/Images/FoodImages/first Order Discount.png";
-import veganDiscount from "/public/assets/Images/FoodImages/Vegan Discount.png";
-import freeIceCreamOffer from "/public/assets/Images/FoodImages/Free Ice Cream Offer.png";
+import firstOrderDiscount from "/assets/Images/FoodImages/first Order Discount.png";
+import veganDiscount from "/assets/Images/FoodImages/Vegan Discount.png";
+import freeIceCreamOffer from "/assets/Images/FoodImages/Free Ice Cream Offer.png";
 
 export default function Discountcards() {
   const location = useLocation();
