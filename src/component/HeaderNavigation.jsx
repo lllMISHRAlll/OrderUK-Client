@@ -20,7 +20,7 @@ const HeaderNav = () => {
     if (userInfo?.userName) {
       navigate("/profile");
     } else {
-      navigate("/userAuthentication/signUp");
+      navigate("/login");
     }
   };
 
