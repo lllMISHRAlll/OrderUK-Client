@@ -49,10 +49,8 @@ a {
 /**    Header Navigation     **/
 
 .header {
-  padding: 10px 20px;
   height: 15dvh;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -69,6 +67,7 @@ a {
   color: white;
   cursor: pointer;
   font-weight: 500;
+  margin-right: 10px;
 }
 
 .loginSignUpBtn:hover {

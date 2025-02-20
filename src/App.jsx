@@ -27,12 +27,6 @@ function App() {
   const { userInfo, setUserInfo } = useContext(UserInfoContext);
 
   useEffect(() => {
-    const storedUser = localStorage.getItem("user");
-    if (storedUser) {
-      setUserInfo(JSON.parse(storedUser));
-      return;
-    }
-
     const fetchUserInfo = async () => {
       if (!token) return;
 

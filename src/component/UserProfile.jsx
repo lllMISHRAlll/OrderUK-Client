@@ -22,6 +22,12 @@ export default function UserProfile() {
     cvv: "",
     nameOnCard: "",
   });
+  const [profile, setProfile] = useState({
+    userName: userInfo?.userName || "",
+    email: userInfo?.email || "",
+    country: userInfo?.country || "",
+    gender: userInfo?.gender || "",
+  });
   const token = localStorage.getItem("token");
 
   const fetchCards = async () => {
@@ -56,7 +62,7 @@ export default function UserProfile() {
     }
   }, [editInfo]);
 
-  const handleEdit = () => {
+  const handleEdit = async () => {
     if (!editInfo) {
       //not-edit flow
       return setEditInfo(!editInfo);
@@ -65,11 +71,23 @@ export default function UserProfile() {
     //edit flow
 
     try {
-      //take payload
-      //call api
-      //show success toast
+      const res = await axios.patch(
+        `${getBaseURI()}/api/user/updateuser`,
+        profile,
+        {
+          headers: { Authorization: `Bearer ${token}` },
+        }
+      );
+
+      console.log(res);
+
+      toast.success("User Updated Successfully");
+
       setEditInfo(!editInfo);
-    } catch (error) {}
+    } catch (error) {
+      console.log("error :", error);
+      toast.error("Faild to Update User");
+    }
   };
 
   const handleCardModal = (card) => {
@@ -86,6 +104,23 @@ export default function UserProfile() {
     }
     setcardModalToggle(true);
   };
+
+  const handleOnChnage = (e) => {
+    const { name, value } = e.target;
+    console.log("na", {
+      name,
+      value,
+    });
+    setProfile((prev) => {
+      return {
+        ...prev,
+        [name]: value,
+      };
+    });
+  };
+
+  console.log("user", userInfo);
+  console.log("profile", profile);
 
   return (
     <div className={style.UserProfileMain}>
@@ -112,7 +147,9 @@ export default function UserProfile() {
               ref={ref}
               type="text"
               disabled={!editInfo}
-              value={userInfo?.userName || "User Name"}
+              value={profile?.userName || "User Name"}
+              onChange={handleOnChnage}
+              name="userName"
             />
           </div>
           <div>
@@ -121,23 +158,36 @@ export default function UserProfile() {
             <input
               type="text"
               disabled={!editInfo}
-              value={userInfo?.email || "User Email"}
+              value={profile?.email || "User Email"}
+              onChange={handleOnChnage}
+              name="email"
             />
           </div>
           <div>
             <label>Gender</label>
             <br />
-            <select name="Gender" disabled={!editInfo}>
+            <select
+              name="gender"
+              disabled={!editInfo}
+              value={profile?.gender}
+              onChange={handleOnChnage}
+            >
               <option value="select Gender">Select gender</option>
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
-              <option value="Other">Other</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
             </select>
           </div>
           <div>
             <label>Country</label>
             <br />
-            <input type="text" disabled={!editInfo} />
+            <input
+              type="text"
+              disabled={!editInfo}
+              value={profile?.country}
+              onChange={handleOnChnage}
+              name="country"
+            />
           </div>
         </form>
       </div>

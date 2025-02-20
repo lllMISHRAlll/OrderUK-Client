@@ -22,7 +22,9 @@ const PaymentPage = () => {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <button className={styles.backButton}>←</button>
+        <button className={styles.backButton} onClick={() => navigate(-1)}>
+          ←
+        </button>
         <h1>Choose and Pay</h1>
       </header>
 

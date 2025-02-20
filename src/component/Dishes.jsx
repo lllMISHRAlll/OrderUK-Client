@@ -3,16 +3,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useContext } from "react";
 import dishStyle from "../styles/Menu&Dishes.module.css";
 import { cartContext } from "../context/CartInfo";
+import { UserInfoContext } from "../context/UserInfo";
 
 export default function Dishes({ price, dishName, dishQuantity, image }) {
   const { addToCart } = useContext(cartContext);
+  const { SetcartToggle } = useContext(UserInfoContext);
 
   const handleDishClick = () => {
     addToCart({
+      image,
       price,
       itemname: dishName,
       itemQuantity: 1,
     });
+    SetcartToggle(true);
   };
 
   return (

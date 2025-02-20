@@ -78,19 +78,19 @@ export default function ProductPage() {
       category: "Cold Drinks",
       dishes: [
         {
-          image: "/assets/Images/Dishes/coldDrinks.png",
+          image: "/assets/Images/Dishes/ColdDrinks.png",
           dishName: "Coca-Cola",
           dishQuantity: "500ml",
           price: "40",
         },
         {
-          image: "/assets/Images/Dishes/coldDrinks.png",
+          image: "/assets/Images/Dishes/ColdDrinks.png",
           dishName: "Coca-Cola",
           dishQuantity: "500ml",
           price: "40",
         },
         {
-          image: "/assets/Images/Dishes/coldDrinks.png",
+          image: "/assets/Images/Dishes/ColdDrinks.png",
           dishName: "Coca-Cola",
           dishQuantity: "500ml",
           price: "40",

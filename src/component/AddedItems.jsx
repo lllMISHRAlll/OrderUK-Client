@@ -2,6 +2,13 @@ import React from "react";
 import style from "../styles/CheckOut.module.css";
 
 export default function AddedItems({ image, itemname, itemQuantity, price }) {
+  console.log("Received Props in AddedItems:", {
+    image,
+    itemname,
+    itemQuantity,
+    price,
+  });
+
   return (
     <div className={style.itemMain}>
       <div className={style.itemMainLeft}>

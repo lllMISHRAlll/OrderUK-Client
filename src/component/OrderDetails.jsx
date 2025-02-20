@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import style from "../styles/CheckOut.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -11,11 +11,37 @@ import { cartContext } from "../context/CartInfo";
 import { useNavigate } from "react-router-dom";
 
 export default function OrderDetails() {
-  const { cartItem } = useContext(cartContext);
+  const { address, setAddress, cartItem } = useContext(cartContext);
   const navigate = useNavigate();
 
+  const [storedCart, setStoredCart] = useState(() => {
+    return cartItem.length
+      ? cartItem
+      : JSON.parse(sessionStorage.getItem("cartItem")) || [];
+  });
+
+  const [storedAddress, setStoredAddress] = useState(() => {
+    return sessionStorage.getItem("address") || "Enter your address here";
+  });
+
+  useEffect(() => {
+    if (!address) {
+      const savedAddress = sessionStorage.getItem("address");
+      if (savedAddress) {
+        setAddress(savedAddress);
+        setStoredAddress(savedAddress);
+      }
+    }
+  }, [address, setAddress]);
+
+  useEffect(() => {
+    if (cartItem.length) {
+      setStoredCart(cartItem);
+    }
+  }, [cartItem]);
+
   const calculateTotal = () => {
-    return cartItem.reduce(
+    return storedCart.reduce(
       (total, item) => total + item.price * item.itemQuantity,
       0
     );
@@ -41,7 +67,7 @@ export default function OrderDetails() {
       </div>
       <div className={style.body}>
         <div className={style.leftBody}>
-          {cartItem.map((obj, index) => (
+          {storedCart.map((obj, index) => (
             <AddedItems key={index} {...obj} />
           ))}
           <br />
@@ -51,7 +77,10 @@ export default function OrderDetails() {
           </div>
         </div>
         <div className={style.rightBody}>
-          <div className={style.addressToggle}>
+          <div
+            className={style.addressToggle}
+            onClick={() => navigate("/address")}
+          >
             <div className={style.deliveryText}>
               <FontAwesomeIcon
                 className={style.loationIcon}
@@ -60,13 +89,12 @@ export default function OrderDetails() {
               <p>
                 Delivery Address
                 <br />
-                <span>Enter your address here</span>
+                <span>{storedAddress}</span>
               </p>
             </div>
             <FontAwesomeIcon
               className={style.rightArrowIcon}
               icon={faAngleRight}
-              onClick={() => navigate("/address")}
             />
           </div>
           <div className={style.itemsPrice}>

@@ -1,16 +1,18 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import style from "../styles/App.module.css";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { getBaseURI } from "../utils/config.js";
+import { UserInfoContext } from "../context/UserInfo.jsx";
 
 export default function LogIn() {
   const [login, setLogin] = useState({
-    email: null,
-    password: null,
+    email: "",
+    password: "",
   });
   const [error, setError] = useState();
   const navigate = useNavigate();
+  const { setUserInfo } = useContext(UserInfoContext);
 
   const handleContinue = async (e) => {
     e.preventDefault();
@@ -29,6 +31,8 @@ export default function LogIn() {
     try {
       const res = await axios.post(`${getBaseURI()}/api/user/login`, payload);
       localStorage.setItem("token", res.data.token);
+
+      setUserInfo(res.data.user);
 
       setLogin({
         email: "",

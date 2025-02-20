@@ -21,6 +21,7 @@ export const CartInfoProvider = ({ children }) => {
             : item
         );
       } else {
+        console.log(newItem);
         return [...prevItems, newItem];
       }
     });
@@ -39,9 +40,18 @@ export const CartInfoProvider = ({ children }) => {
     });
   };
 
+  //Delivery Address
+  const [address, setAddress] = useState("Enter your address here");
   return (
     <cartContext.Provider
-      value={{ cartItem, setCartItem, addToCart, handleReduceQuantity }}
+      value={{
+        cartItem,
+        setCartItem,
+        addToCart,
+        handleReduceQuantity,
+        address,
+        setAddress,
+      }}
     >
       {children}
     </cartContext.Provider>

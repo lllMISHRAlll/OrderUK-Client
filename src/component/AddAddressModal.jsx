@@ -55,8 +55,6 @@ export default function AddAddressModal({
       address: "",
     });
     onClose();
-
-    toast.success("Succesfull");
   };
 
   if (!isOpen) return null;

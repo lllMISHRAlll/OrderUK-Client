@@ -26,6 +26,11 @@ export default function Cart() {
 
   const total = calculateTotal();
 
+  const handleCheckOut = () => {
+    sessionStorage.setItem("cartItem", JSON.stringify(cartItem));
+    navigate("/checkout");
+  };
+
   return (
     <div className={cartStyle.container}>
       <div className={cartStyle.shareLink}>
@@ -109,7 +114,7 @@ export default function Cart() {
         <button
           className={cartStyle.checkOutBtn}
           type="submit"
-          onClick={() => navigate("/CheckOut")}
+          onClick={handleCheckOut}
         >
           <FontAwesomeIcon
             icon={faCircleArrowRight}

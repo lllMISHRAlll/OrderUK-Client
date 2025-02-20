@@ -7,7 +7,7 @@ import NavigationBar from "./NavigationBar";
 import { UserInfoContext } from "../context/UserInfo";
 
 const HeaderNav = () => {
-  const { userInfo } = useContext(UserInfoContext);
+  const { userInfo, setUserInfo } = useContext(UserInfoContext);
   const navigate = useNavigate();
 
   const handleNavigation = (navItem) => {
@@ -23,6 +23,15 @@ const HeaderNav = () => {
       navigate("/login");
     }
   };
+
+  const handleLogOut = () => {
+    localStorage.removeItem("token");
+    setUserInfo(null);
+    navigate("/login");
+    toast.success("logout successfull");
+  };
+
+  console.log("suer", userInfo);
 
   return (
     <header className={Style.header}>
@@ -44,10 +53,16 @@ const HeaderNav = () => {
         className={`${Style.loginSignUpBtn} ${Style.pointer}`}
       >
         <FontAwesomeIcon className={Style.userIcon} icon={faUser} />
-        {userInfo?.userName
-          ? `Hey ${userInfo.userName.split(" ")[0]}`
-          : "Login / Signup"}
+        {userInfo ? `Hey ${userInfo.userName.split(" ")[0]}` : "Login / Signup"}
       </button>
+      {userInfo && (
+        <button
+          className={`${Style.loginSignUpBtn} ${Style.pointer}`}
+          onClick={handleLogOut}
+        >
+          Logout
+        </button>
+      )}
     </header>
   );
 };

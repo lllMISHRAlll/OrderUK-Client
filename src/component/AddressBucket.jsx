@@ -23,7 +23,6 @@ export default function AddressBucket() {
         headers: { Authorization: `Bearer ${token}` },
       });
 
-      console.log("Fetched Addresses:", data);
       setAddresses(Array.isArray(data) ? data : []);
     } catch (error) {
       toast.error("Failed to fetch addresses.");
@@ -71,7 +70,6 @@ export default function AddressBucket() {
       await axios.delete(`${getBaseURI()}/api/address/delete/${addressId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
-      // setAddresses(addresses.filter((_, i) => i !== index));
 
       fetchAddresses();
       toast.success("Address deleted successfully");
