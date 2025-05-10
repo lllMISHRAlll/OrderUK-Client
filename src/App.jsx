@@ -47,8 +47,8 @@ function App() {
 
   const ProtectedProductPage = withAuth(ProductPage);
   const ProtectedCheckoutPage = withAuth(CheckOut);
-  const RestrictedLogin = withAuth(LogIn, false); // Redirects logged-in users to Home
-  const RestrictedSignup = withAuth(SignUp, false); // Redirects logged-in users to Home
+  const RestrictedLogin = withAuth(LogIn, false);
+  const RestrictedSignup = withAuth(SignUp, false);
 
   return (
     <div className={style.main}>

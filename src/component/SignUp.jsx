@@ -82,9 +82,7 @@ export default function SignUp() {
             id="phone"
             placeholder="Enter your 10-digit mobile number"
             value={signUp.phone}
-            // onChange={handlePhoneChange}
             onChange={(e) => setSignUp({ ...signUp, phone: e.target.value })}
-            // pattern="\d{10}"
             required
           />
           <br />

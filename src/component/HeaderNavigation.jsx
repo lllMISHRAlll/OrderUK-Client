@@ -31,8 +31,6 @@ const HeaderNav = () => {
     toast.success("logout successfull");
   };
 
-  console.log("suer", userInfo);
-
   return (
     <header className={Style.header}>
       <Link to="/">
